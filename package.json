@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd-practices",
+  "version": "1.0.0",
+  "description": "JS TDD Practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ag-castro/js-tdd-practices.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "practices"
+  ],
+  "author": "André Gustavo Castro <andregustavo.castro@gmail.com> (https://www.webapps.agency/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ag-castro/js-tdd-practices/issues"
+  },
+  "homepage": "https://github.com/ag-castro/js-tdd-practices#readme"
+}

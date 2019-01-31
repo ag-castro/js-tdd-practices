@@ -1,7 +1,7 @@
-const a = 'andre';
+const a = 'andre Gustavo castro';
 
 function My(as) {
   return as;
 }
 
-My(a);
+console.log(My(a));

@@ -3,60 +3,24 @@
 /* eslint-disable func-names */
 
 import { expect } from 'chai';
-import { sum, sub, multiply, div } from '../src/main';
+import FizzBuzz from '../src/main';
 
-describe('Calc', () => {
+describe('Main', () => {
   // Smoke tests
-  describe('Smoke tests', () => {
-    it('should exists the method `sum`', () => {
-      expect(sum).to.exist;
-      expect(sum).to.be.a('function');
-    });
-
-    it('should exists the method `sub`', () => {
-      expect(sub).to.exist;
-      expect(sub).to.be.a('function');
-    });
-
-    it('should exists the method `multiply`', () => {
-      expect(multiply).to.exist;
-      expect(multiply).to.be.a('function');
-    });
-
-    it('should exists the method `div`', () => {
-      expect(div).to.exist;
-      expect(div).to.be.a('function');
-    });
+  it('should return `Fizz` if multiple of 3.', () => {
+    expect(FizzBuzz(3)).to.equal('Fizz');
+    expect(FizzBuzz(6)).to.equal('Fizz');
   });
-
-  describe('Sum', () => {
-    it('should return 4 when `sum(2,2)`', () => {
-      expect(sum(2, 2)).to.be.equal(4);
-    });
+  it('should return `Buzz` if multiple of 5.', () => {
+    expect(FizzBuzz(5)).to.be.equal('Buzz');
   });
-
-  describe('Sub', () => {
-    it('should return 4 when `sub(6,2)`', () => {
-      expect(sub(6, 2)).to.be.equal(4);
-    });
-
-    it('should return -4 when `sub(6,10)`', () => {
-      expect(sub(6, 10)).to.be.equal(-4);
-    });
+  it('should return `FizzBuzz` if multiple of 3 and 5.', () => {
+    expect(FizzBuzz(15)).to.be.equal('FizzBuzz');
   });
-
-  describe('Miltiply', () => {
-    it('should return 4 when `multiply(2,2)`', () => {
-      expect(multiply(2, 2)).to.be.equal(4);
-    });
+  it('should return the number if non-multiple of 3 and 5.', () => {
+    expect(FizzBuzz(7)).to.be.equal(7);
   });
-
-  describe('Div', () => {
-    it('should return 2 when `div(4,2)`', () => {
-      expect(div(4, 2)).to.be.equal(2);
-    });
-    it('should return a Division by Zero Error when `div(4,0)`', () => {
-      expect(div(4, 0)).to.be.an('error');
-    });
+  it('should return the zero when 0.', () => {
+    expect(FizzBuzz(0)).to.be.equal(0);
   });
 });

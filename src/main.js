@@ -1,8 +1,11 @@
-const sum = (num1, num2) => num1 + num2;
-const sub = (num1, num2) => num1 - num2;
-const multiply = (num1, num2) => num1 * num2;
-const div = (num1, num2) => ((num1 === 0 || num2 === 0) ? new Error('Division by Zero Error!') : num1 / num2);
-
-export {
-  sum, sub, multiply, div,
+const FizzBuzz = (num) => {
+  if (num === 0) return 0;
+  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+  if (num % 3 === 0) return 'Fizz';
+  if (num % 5 === 0) return 'Buzz';
+  return num;
 };
+
+const foo = () => 'teste';
+
+export default FizzBuzz;
